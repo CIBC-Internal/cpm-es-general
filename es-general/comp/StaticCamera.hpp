@@ -34,6 +34,7 @@ struct StaticCameraData
   float zpp;        ///< z plane of play (exact Z value to use).
   float zppHWidth;  ///< z plane of play half width.
   float zppHHeight; ///< z plane of play half height.
+  float winWidth;   ///< window width
 
   StaticCameraData()
   {
@@ -45,6 +46,7 @@ struct StaticCameraData
     zpp        = 0.0f;
     zppHWidth  = 0.0f;
     zppHHeight = 0.0f;
+    winWidth   = 0.0f;
   }
 
   void setView(const glm::mat4& view)
